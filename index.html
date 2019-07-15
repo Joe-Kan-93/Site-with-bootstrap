@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-dark">
+        <a class="navbar-brand offset-1" href="#"
+          ><span class="font-weight-bold">Café.</span>Shop</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button
+              class="btn btn-outline-secondary my-2 my-sm-0"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <div id="home" class="jumbotron w-25 col-lg-3">
+        <h1 class="text-primary">
+          <span class="text-primary font-weight-bold">Bonjour</span>,
+        </h1>
+        <p class="text-primary">some tasty coffee</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <h1 class="text-light float-left">&#9135; About us</h1>
+        <div class="jum-div d-flex col-lg-6 offset-lg-6 justify-content-center">
+          <div class="jumbotron align-self-center">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Molestias laborum culpa, maiores, doloremque alias maxime
+              repellendus voluptatem atque consequuntur quisquam cupiditate
+              accusamus ullam quas, odit aliquid provident soluta. Voluptatibus,
+              vel harum. Voluptate iusto consequuntur odit voluptas quam?
+              Tempore quibusdam illo sequi harum corporis aliquid. Soluta ipsam
+              qui, in beatae doloribus modi amet assumenda id ab magnam commodi,
+              nostrum dolorem? Pariatur, voluptas? Nobis at perferendis iste
+              dolore reprehenderit! Facilis quo optio ipsa dignissimos officia
+              eos unde quia error asperiores culpa reprehenderit et nobis at
+              tenetur esse totam cupiditate nemo voluptate, aliquid hic.
+            </p>
+            <a class="btn btn-primary btn-lg" href="#" role="button"
+              >READ MORE</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h1>&#9135; My Work</h1>
+        <div
+          class="d-sm-block d-lg-flex justify-content-center justify-content-around"
+        >
+          <div id="item01">
+            <div class="gallery" data-toggle="modal" data-target="#myModal01">
+                <img
+                  src="https://source.unsplash.com/-YHSwy6uqvk/600x400"
+                  alt=""
+                />
+                <h4>Item 01</h4>
+            </div>
+            <div
+              id="myModal01"
+              class="modal fade"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered"
+              role="document">
+                <img
+                  class="w-100 h-100"
+                  src="https://source.unsplash.com/-YHSwy6uqvk/720x720"
+                  class="img-responsive"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ullam corrupti quia laboriosam cum. Voluptas mollitia
+                    corrupti, ipsum odit vero illum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="item02">
+            <div class="gallery" data-toggle="modal" data-target="#myModal02">
+                <img
+                  src="https://source.unsplash.com/hrlvr2ZlUNk/600x400"
+                  alt=""
+                />
+                <h4>Item 02</h4>
+            </div>
+            <div
+              id="myModal02"
+              class="modal fade"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered"
+              role="document">
+                <img
+                  class="w-100 h-100"
+                  src="https://source.unsplash.com/hrlvr2ZlUNk/720x720"
+                  class="img-responsive"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ullam corrupti quia laboriosam cum. Voluptas mollitia
+                    corrupti, ipsum odit vero illum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-sm-block d-lg-flex justify-content-center justify-content-around"
+        >
+          <div id="item03">
+            <div class="gallery" data-toggle="modal" data-target="#myModal03">
+                <img
+                  src="https://source.unsplash.com/LR559Dcst70/600x400/"
+                  alt=""
+                />
+                <h4>Item 03</h4>
+            </div>
+            <div
+              id="myModal03"
+              class="modal fade"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModal03Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered"
+              role="document>
+                <img
+                  class="w-100 h-100"
+                  src="https://source.unsplash.com/LR559Dcst70/720x720/"
+                  class="img-responsive"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ullam corrupti quia laboriosam cum. Voluptas mollitia
+                    corrupti, ipsum odit vero illum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="item04">
+            <div class="gallery" data-toggle="modal" data-target="#myModal04">
+              <img
+                src="https://source.unsplash.com/MNtag_eXMKw/600x400/"
+                alt=""
+              />
+              <h4>Item 04</h4>
+            </div>
+            <div
+              id="myModal04"
+              class="modal fade"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModal04Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-lg modal-dialog-centered"
+                role="document"
+              >
+                <img
+                  class="w-100 h-100"
+                  src="https://source.unsplash.com/MNtag_eXMKw/720x720/"
+                  class="img-responsive"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ullam corrupti quia laboriosam cum. Voluptas mollitia
+                    corrupti, ipsum odit vero illum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-form">
+          <h1>&#9135; Contact</h1>
+          <form method="post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="txtName"
+                    class="form-control"
+                    placeholder="First name"
+                    value=""
+                  />
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="txtEmail"
+                    class="form-control"
+                    placeholder="Last name"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea
+                    name="txtMsg"
+                    class="form-control"
+                    placeholder="Your Message *"
+                    style="width: 100%; height: 150px;"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    name="btnSubmit"
+                    class="btnContact"
+                    value="Send Message"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center">
+      <h1>Café.Shop</h1>
+      <br /><br /><br />
+      <p>©2018 made with <span class="text-danger">&#10084;</span></p>
+    </footer>
+  </body>
+</html>

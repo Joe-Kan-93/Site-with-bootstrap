@@ -1,0 +1,206 @@
+body {
+  font-size: 100%;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: gray;
+  background-image: url("https://images.unsplash.com/photo-1514134583630-250e42c36dbd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7489addcca7cb627dc6aa26a42e5099c&auto=format&fit=crop&w=2134&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+body:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000;
+  z-index: 0;
+  opacity: 0.5;
+  overflow: hidden;
+}
+body header {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+body header #home {
+  background-color: transparent;
+  position: absolute;
+  text-align: left;
+  top: 40%;
+  left: 20%;
+}
+body header #home h1 {
+  font-size: 3rem;
+}
+body header #home p {
+  font-size: 2rem;
+}
+body main #about {
+  width: 100%;
+  height: 150vh;
+  background-color: gray;
+  background-image: url("https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2143975001aacad9d14bb5c5160d725b&auto=format&fit=crop&w=2134&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+body main #about h1 {
+  padding-left: 10%;
+}
+body main #about .jum-div {
+  background-color: #fff;
+  text-align: center;
+  height: 100%;
+}
+body main #about .jumbotron {
+  width: 80%;
+  height: 50%;
+}
+body main #gallery {
+  height: 100%;
+  background-color: #fff;
+}
+body main #gallery #item01 .gallery,
+body main #gallery #item02 .gallery,
+body main #gallery #item03 .gallery,
+body main #gallery #item04 .gallery {
+  padding: 0;
+  position: relative;
+}
+body main #gallery #item01 .gallery h4,
+body main #gallery #item02 .gallery h4,
+body main #gallery #item03 .gallery h4,
+body main #gallery #item04 .gallery h4 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+body main #gallery #item01 .gallery:after,
+body main #gallery #item02 .gallery:after,
+body main #gallery #item03 .gallery:after,
+body main #gallery #item04 .gallery:after {
+  transition: all 0.5s ease-in;
+}
+body main #gallery #item01 .gallery:hover:after,
+body main #gallery #item02 .gallery:hover:after,
+body main #gallery #item03 .gallery:hover:after,
+body main #gallery #item04 .gallery:hover:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.3;
+}
+body main #gallery #item01 .gallery:hover h4,
+body main #gallery #item02 .gallery:hover h4,
+body main #gallery #item03 .gallery:hover h4,
+body main #gallery #item04 .gallery:hover h4 {
+  top: 50%;
+  opacity: 1;
+}
+body main #gallery div {
+  padding: 1%;
+}
+body main #gallery h1 {
+  padding-left: 10%;
+}
+body main #gallery p {
+  font-size: 1rem;
+  color: black;
+  background-color: gray;
+  opacity: 0.8;
+}
+body main #contact {
+  background-color: #fff;
+  height: 50vh;
+  padding: 0 20%;
+}
+body main #contact .contact-form {
+  height: 50%;
+  width: 100%;
+}
+body main #contact .contact-form .form-control {
+  border-radius: 0 0 1rem 1rem;
+  background-color: lightblue;
+}
+body main #contact .contact-form h1 {
+  padding-left: 10%;
+}
+body main #contact .contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+  padding: 3%;
+  background: blueviolet;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+}
+body footer {
+  padding: 1%;
+  color: white;
+  height: 200px;
+  background-color: black;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1024px) {
+  #home {
+    width: 100%;
+  }
+  #home h1,
+#home p {
+    color: black;
+  }
+
+  body main #about .jum-div {
+    background-color: transparent;
+    display: block;
+  }
+  body main #about .jum-div .jumbotron {
+    opacity: 0.7;
+    height: 70%;
+  }
+  body main #about .jum-div .jumbotron h1 {
+    font-size: 1.5rem;
+  }
+  body main #about .jum-div .jumbotron p {
+    font-size: 0.9rem;
+  }
+
+  #gallery img {
+    width: 100%;
+    height: 250px;
+  }
+  #gallery h1 {
+    padding-top: 10%;
+  }
+  #gallery div {
+    text-align: center;
+  }
+
+  body main #contact {
+    height: 60vh;
+  }
+  body main #contact .contact-form .btnContact {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

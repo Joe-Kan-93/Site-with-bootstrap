@@ -1,0 +1,215 @@
+body {
+  font-size: 100%;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: {
+    color: gray;
+    image: url("https://images.unsplash.com/photo-1514134583630-250e42c36dbd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7489addcca7cb627dc6aa26a42e5099c&auto=format&fit=crop&w=2134&q=80");
+    size: cover;
+    position: center;
+    attachment: fixed;
+    repeat: no-repeat;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 0;
+    opacity: 0.5;
+    overflow: hidden;
+  }
+
+  header {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+
+    #home {
+      background-color: transparent;
+      position: absolute;
+      text-align: left;
+      top: 40%;
+      left: 20%;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  main {
+    #about {
+      width: 100%;
+      height: 150vh;
+      background: {
+        color: gray;
+        image: url("https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2143975001aacad9d14bb5c5160d725b&auto=format&fit=crop&w=2134&q=80");
+        size: cover;
+        position: center;
+        attachment: scroll;
+        repeat: no-repeat;
+      }
+      h1 {
+        padding-left: 10%;
+      }
+      .jum-div {
+        background-color: #fff;
+        text-align: center;
+        height: 100%;
+      }
+      .jumbotron {
+        width: 80%;
+        height: 50%;
+      }
+    }
+
+    #gallery {
+      height: 100%;
+      background-color: #fff;
+      #item01,
+      #item02,
+      #item03,
+      #item04 {
+        .gallery {
+          padding: 0;
+          position: relative;
+          h4 {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            opacity: 0;
+            transition: all 0.5s ease-in;
+          }
+
+          &:after {
+            transition: all 0.5s ease-in;
+          }
+
+          &:hover:after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: black;
+            opacity: 0.3;
+          }
+          &:hover h4 {
+            top: 50%;
+            opacity: 1;
+          }
+        }
+      }
+      div {
+        padding: 1%;
+      }
+      h1 {
+        padding-left: 10%;
+      }
+      p {
+        font-size: 1rem;
+        color: black;
+        background-color: gray;
+        opacity: 0.8;
+      }
+    }
+
+    #contact {
+      background-color: #fff;
+      height: 50vh;
+      padding: 0 20%;
+      .contact-form {
+        height: 50%;
+        width: 100%;
+        .form-control {
+          border-radius: 0 0 1rem 1rem;
+          background-color: lightblue;
+        }
+        h1 {
+          padding-left: 10%;
+        }
+        .btnContact {
+          width: 50%;
+          border: none;
+          border-radius: 0 0 1rem 1rem;
+          padding: 3%;
+          background: blueviolet;
+          color: #fff;
+          cursor: pointer;
+          float: right;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 1%;
+    color: white;
+    height: 200px;
+    background: {
+      color: black;
+    }
+    opacity: 0.9;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #home {
+    width: 100%;
+    h1,
+    p {
+      color: black;
+    }
+  }
+  body main #about {
+    .jum-div {
+      background-color: transparent;
+      display: block;
+      .jumbotron {
+        opacity: 0.7;
+        height: 70%;
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  #gallery {
+    img {
+      width: 100%;
+      height: 250px;
+    }
+    h1 {
+      padding-top: 10%;
+    }
+    div {
+      text-align: center;
+    }
+  }
+
+  body main #contact {
+    height: 60vh;
+    .contact-form {
+      .btnContact {
+        width: 100%;
+      }
+    }
+  }
+}
